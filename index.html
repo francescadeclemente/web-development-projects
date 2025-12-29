@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,41 +8,61 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css" </head>
+  <link rel="stylesheet" href="css/bootstrap.css" />
+</head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Francesca De Clemente</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link gino" href="#summary">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Resume</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+
 
   <main class="container py-4">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+                aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#summary">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Resume</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <header class="p-4 text-white rounded-3 mb-4" style="background: linear-gradient(90deg, #ffa42c, #6f8cff)">
+
       <div class="d-md-flex align-items-center justify-content-between">
-        <div>
-          <h1 class="display-6 mb-1">Francesca De Clemente</h1>
-          <p class="lead mb-0">Best Web Developer</p>
+        <div class="d-flex flex-column flex-md-row align-items-center gap-3">
+          <!-- Foto profilo con classi Bootstrap -->
+          <img src="francescadeclemente.jpg" alt="Francesca De Clemente"
+               title="Foto di Francesca De Clemente"
+               class="rounded-circle border border-white border-4 shadow profile-picture">
+          <div class="text-center text-md-start">
+            <h1 class="display-6 mb-1">Francesca De Clemente</h1>
+            <p class="lead mb-0">Best  Developer</p>
+          </div>
         </div>
         <div class="mt-3 mt-md-0">
-          <a class="btn btn-outline-light" href="mailto:you@example.com">Contact me</a>
+          <a class="btn btn-outline-light" href="mailto:francescadeclemente5454@gmail.com">Contact me</a>
         </div>
       </div>
     </header>
     <div class="container">
-      <div class="row row-cols-2 g-3 mb-4">
+      <section id="summary" class="mb-4">
+        <h2 class="h5">Summary</h2>
+        <p class="text-muted">
+          With a legal-economic education and a strong analytical approach,
+          I thrive in dynamic environments.
+          I’m adaptable, curious, and motivated by challenges that push me to learn.
+
+        </p>
+        <div class="d-grid gap-2">
+          <a class="btn btn-primary" href="Francesca_De_Clemente_CV1.pdf.pdf" target="_blank">
+            Scarica CURRICULUM</a>
+        </div>
+      </section>
+      <div class="row row-cols-3 g-3 mb-4">
         <div class="col col-4">
           <section id="Info" class="mb-4">
             <div class="card h-100">
@@ -53,200 +72,215 @@
                 <div><span class="bi bi-telephone"></span> +39 3662987266</div>
                 <div><span class="bi bi-linkedin"></span> linkedin.com/in/francesca-de-clemente</div>
                 <div><span class="bi bi-github"></span> github.com/francescadeclemente</div>
-
               </div>
             </div>
           </section>
+          <section id="skills" class="mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Skills</h5>
+                <span class="badge bg-primary me-1 mb-1">HTML</span>
+                <span class="badge bg-primary me-1 mb-1">CSS</span>
+                <span class="badge bg-primary me-1 mb-1">Bootstrap</span>
+                <span class="badge bg-primary me-1 mb-1">Responsive Design</span>
 
-        </div>
-        <div class="col col-8">
-          <section id="summary" class="mb-4">
-            <h2 class="h5">Summary</h2>
-            <p class="text-muted">
-              With a legal-economic education and a strong analytical approach,
-              I thrive in dynamic environments.
-              I’m adaptable, curious, and motivated by challenges that push me to learn.
+                <hr>
 
-            </p>
-            <div class="d-grid gap-2">
-                <a class="btn btn-primary" href="Francesca_De_Clemente_CV1.pdf.pdf" target="_blank">
-                  Scarica CURRICULUM</a>
+                <h5 class="card-title">Hobbies</h5>
+                <ul class="list-unstyled mb-0">
+                  <li><i class="bi bi-book"></i> Reading</li>
+                  <li><i class="bi bi-music-note-beamed"></i> Music</li>
+                  <li><i class="bi bi-airplane"></i> Traveling</li>
+                </ul>
+
+                <hr>
+
+                <h5 class="card-title">Languages</h5>
+                <ul class="list-unstyled mb-0">
+                  <li><strong>Italian:</strong> Native</li>
+                  <li><strong>English:</strong> B2</li>
+                  <li><strong>Spanish:</strong> A2</li>
+                </ul>
+              </div>
             </div>
+          </section>
+        </div>
+
+        <div class="col col-8">
+          <section id="experience" class="mb-4">
+            <!--h2 class="h5">Experience</h2 -->
+            <!--div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Job Title — Company</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Dates</h6>
+                      <ul>
+                        <li>Responsibility or achievement 1</li>
+                        <li>Responsibility or achievement 2</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h5 class="card-title">Another Role — Company</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">Dates</h6>
+                      <p class="card-text">Short note about responsibilities or achievements.</p>
+                    </div>
+                  </div>
+                </div>
+              </div-->
+            <div class="container py-2">
+              <h2 class="font-weight-light text-center text-muted py-3">Experience</h2>
+
+              <hr />
+
+              <div class="container py-2">
+                <!-- timeline item 1 -->
+                <div class="row no-gutters">
+                  <div class="col-sm">
+                    <!--spacer-->
+                  </div>
+                  <!-- timeline item 1 center dot -->
+                  <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                      <div class="col">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                      <span class="badge rounded-pill bg-primary border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                      <div class="col border-end">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                  </div>
+                  <!-- timeline item 1 event content -->
+                  <div class="col-sm py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="float-right text-muted small">Jan 9th 2019 7:00 AM</div>
+                        <h4 class="card-title text-muted">Day 1 Orientation</h4>
+                        <p class="card-text">Welcome to the campus, introduction and get started with the tour.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/row-->
+                <!-- timeline item 2 -->
+                <div class="row no-gutters">
+                  <div class="col-sm py-2">
+                    <div class="card shadow">
+                      <div class="card-body">
+                        <div class="float-right small">Jan 10th 2019 8:30 AM</div>
+                        <h4 class="card-title">Day 2 Sessions</h4>
+                        <p class="card-text">Sign-up for the lessons and speakers that coincide with your course
+                          syllabus. Meet and greet with instructors.</p>
+                        <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#t22_details"
+                                data-bs-toggle="collapse">Show Details ▼</button>
+                        <div class="collapse border" id="t22_details">
+                          <div class="p-2 font-monospace">
+                            <div>08:30 - 09:00 Breakfast in CR 2A</div>
+                            <div>09:00 - 10:30 Live sessions in CR 3</div>
+                            <div>10:30 - 10:45 Break</div>
+                            <div>10:45 - 12:00 Live sessions in CR 3</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                      <div class="col border-end">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                      <span class="badge rounded-pill bg-primary">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                      <div class="col border-end">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <!--spacer-->
+                  </div>
+                </div>
+                <!--/row-->
+                <!-- timeline item 3 -->
+                <div class="row no-gutters">
+                  <div class="col-sm">
+                    <!--spacer-->
+                  </div>
+                  <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                      <div class="col border-end">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                      <span class="badge rounded-pill bg-primary border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                      <div class="col border-end">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                  </div>
+                  <div class="col-sm py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="float-right text-muted small">Jan 11th 2019 8:30 AM</div>
+                        <h4 class="card-title">Day 3 Sessions</h4>
+                        <p>
+                          Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony
+                          ennui twee squid fap selvage. Meggings flannel
+                          Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl
+                          lumbersexual bicycle rights, viral fap cronut leggings
+                          squid chillwave pickled gentrify mustache.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--/row-->
+                <!-- timeline item 4 -->
+                <div class="row no-gutters">
+                  <div class="col-sm py-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="float-right text-muted small">Jan 12th 2019 11:30 AM</div>
+                        <h4 class="card-title">Day 4 Wrap-up</h4>
+                        <p>Join us for lunch in Bootsy's cafe across from the Campus Center.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
+                    <div class="row h-50">
+                      <div class="col border-end">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                    <h5 class="m-2">
+                      <span class="badge rounded-pill bg-primary border">&nbsp;</span>
+                    </h5>
+                    <div class="row h-50">
+                      <div class="col">&nbsp;</div>
+                      <div class="col">&nbsp;</div>
+                    </div>
+                  </div>
+                  <div class="col-sm">
+                    <!--spacer-->
+                  </div>
+                </div>
+                <!--/row-->
+              </div>
           </section>
         </div>
       </div>
     </div>
 
-    <section id="experience" class="mb-4">
-      <!--h2 class="h5">Experience</h2 -->
-      <!--div class="row row-cols-1 row-cols-md-2 g-3">
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Job Title — Company</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Dates</h6>
-                <ul>
-                  <li>Responsibility or achievement 1</li>
-                  <li>Responsibility or achievement 2</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Another Role — Company</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Dates</h6>
-                <p class="card-text">Short note about responsibilities or achievements.</p>
-              </div>
-            </div>
-          </div>
-        </div-->
-      <div class="container py-2">
-        <h2 class="font-weight-light text-center text-muted py-3">Experience</h2>
-
-        <hr />
-
-        <div class="container py-2">
-          <!-- timeline item 1 -->
-          <div class="row no-gutters">
-            <div class="col-sm">
-              <!--spacer-->
-            </div>
-            <!-- timeline item 1 center dot -->
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-              <div class="row h-50">
-                <div class="col">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-              <h5 class="m-2">
-                <span class="badge rounded-pill bg-light border">&nbsp;</span>
-              </h5>
-              <div class="row h-50">
-                <div class="col border-end">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-            </div>
-            <!-- timeline item 1 event content -->
-            <div class="col-sm py-2">
-              <div class="card">
-                <div class="card-body">
-                  <div class="float-right text-muted small">Jan 9th 2019 7:00 AM</div>
-                  <h4 class="card-title text-muted">Day 1 Orientation</h4>
-                  <p class="card-text">Welcome to the campus, introduction and get started with the tour.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/row-->
-          <!-- timeline item 2 -->
-          <div class="row no-gutters">
-            <div class="col-sm py-2">
-              <div class="card border-success shadow">
-                <div class="card-body">
-                  <div class="float-right text-success small">Jan 10th 2019 8:30 AM</div>
-                  <h4 class="card-title text-success">Day 2 Sessions</h4>
-                  <p class="card-text">Sign-up for the lessons and speakers that coincide with your course
-                    syllabus. Meet and greet with instructors.</p>
-                  <button class="btn btn-sm btn-outline-secondary" type="button" data-bs-target="#t22_details"
-                    data-bs-toggle="collapse">Show Details ▼</button>
-                  <div class="collapse border" id="t22_details">
-                    <div class="p-2 font-monospace">
-                      <div>08:30 - 09:00 Breakfast in CR 2A</div>
-                      <div>09:00 - 10:30 Live sessions in CR 3</div>
-                      <div>10:30 - 10:45 Break</div>
-                      <div>10:45 - 12:00 Live sessions in CR 3</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-              <div class="row h-50">
-                <div class="col border-end">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-              <h5 class="m-2">
-                <span class="badge rounded-pill bg-success">&nbsp;</span>
-              </h5>
-              <div class="row h-50">
-                <div class="col border-end">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-            </div>
-            <div class="col-sm">
-              <!--spacer-->
-            </div>
-          </div>
-          <!--/row-->
-          <!-- timeline item 3 -->
-          <div class="row no-gutters">
-            <div class="col-sm">
-              <!--spacer-->
-            </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-              <div class="row h-50">
-                <div class="col border-end">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-              <h5 class="m-2">
-                <span class="badge rounded-pill bg-light border">&nbsp;</span>
-              </h5>
-              <div class="row h-50">
-                <div class="col border-end">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-            </div>
-            <div class="col-sm py-2">
-              <div class="card">
-                <div class="card-body">
-                  <div class="float-right text-muted small">Jan 11th 2019 8:30 AM</div>
-                  <h4 class="card-title">Day 3 Sessions</h4>
-                  <p>
-                    Shoreditch vegan artisan Helvetica. Tattooed Codeply Echo Park Godard kogi, next level irony
-                    ennui twee squid fap selvage. Meggings flannel
-                    Brooklyn literally small batch, mumblecore PBR try-hard kale chips. Brooklyn vinyl
-                    lumbersexual bicycle rights, viral fap cronut leggings
-                    squid chillwave pickled gentrify mustache.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--/row-->
-          <!-- timeline item 4 -->
-          <div class="row no-gutters">
-            <div class="col-sm py-2">
-              <div class="card">
-                <div class="card-body">
-                  <div class="float-right text-muted small">Jan 12th 2019 11:30 AM</div>
-                  <h4 class="card-title">Day 4 Wrap-up</h4>
-                  <p>Join us for lunch in Bootsy's cafe across from the Campus Center.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-1 text-center flex-column d-none d-sm-flex">
-              <div class="row h-50">
-                <div class="col border-end">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-              <h5 class="m-2">
-                <span class="badge rounded-pill bg-light border">&nbsp;</span>
-              </h5>
-              <div class="row h-50">
-                <div class="col">&nbsp;</div>
-                <div class="col">&nbsp;</div>
-              </div>
-            </div>
-            <div class="col-sm">
-              <!--spacer-->
-            </div>
-          </div>
-          <!--/row-->
-        </div>
-    </section>
-    <section id="skills" class="mb-4">
-      <h2 class="h5">Skills</h2>
+    <section id="education" class="mb-4">
+      <h2 class="h5">Education</h2>
       <div class="mb-2">
         <span class="badge bg-primary me-1 mb-1">HTML</span>
         <span class="badge bg-primary me-1 mb-1">CSS</span>
@@ -257,16 +291,6 @@
     <section></section>
 
     <footer id="contact" class="text-center mt-4 text-muted">
-      <form>
-        <h5>Contact Me</h5>
-        <div class="form-floating">
-          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-          <label for="floatingTextarea">Comments</label>
-        </div>
-        <div class="d-grid gap-2">
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-      </form>
     </footer>
   </main>
   <!-- Bootstrap JS bundle (Popper included) -->
